@@ -6,10 +6,10 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-// Create a mock class for NetworkDataSource
+// mock class for NetworkDataSource
 class MockNetworkDataSource extends Mock implements NetworkDataSource {}
 
-// Define a utility function to create mock Dio responses
+//utility function to create mock Dio responses
 Response<dynamic> mockResponse(Map<String, dynamic> data) {
   return Response<dynamic>(
     data: data,
