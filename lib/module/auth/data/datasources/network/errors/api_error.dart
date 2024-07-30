@@ -11,7 +11,7 @@ class ApiError implements Exception {
       case DioExceptionType.cancel:
         return ApiError('Request to API was cancelled');
       case DioExceptionType.connectionTimeout:
-        return ApiError('Connection timeout with API');
+        return ApiError('Connection timeout with API, Please try again');
       case DioExceptionType.sendTimeout:
         return ApiError('Send timeout in connection with API');
       case DioExceptionType.receiveTimeout:
